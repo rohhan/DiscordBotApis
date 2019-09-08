@@ -18,7 +18,7 @@ namespace DiscordBotApis.Data
         public Guild GetGuildById(ulong id)
         {
             return _guildContext.Guilds
-                .FirstOrDefault(g => g.GuildId == id);
+                .FirstOrDefault(g => g.GuildDiscordId == id);
         }
 
         public List<Guild> GetGuilds()
