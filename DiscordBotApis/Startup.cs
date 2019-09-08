@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using DiscordBotApis.Data.Users;
 
 namespace DiscordBotApis
 {
@@ -40,6 +41,7 @@ namespace DiscordBotApis
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddScoped<IGuildRepository, GuildRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             services.AddDbContextPool<DiscordBotApiDbContext>(
                 options => options.UseSqlServer(Configuration["ConnectionString:DiscordBotData"])
