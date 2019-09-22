@@ -9,5 +9,7 @@ namespace DiscordBotApis.Data.Users
     public interface IUserRepository
     {
         List<User> GetAllUsersByGuild(ulong guildDiscordId);
+
+        List<UserCountData> GetUserCount(ulong guildDiscordId);
     }
 }

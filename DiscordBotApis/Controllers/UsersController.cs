@@ -27,5 +27,13 @@ namespace DiscordBotApis.Controllers
 
             return Ok(users);
         }
+
+        [HttpGet("count/{guildDiscordId}")]
+        public ActionResult GetUserCount(ulong guildDiscordId)
+        {
+            var userCount = _userRepo.GetUserCount(guildDiscordId);
+
+            return Ok(userCount);
+        }
     }
 }

@@ -8,9 +8,9 @@ namespace DiscordBotApis.Data
 {
     public interface IGuildRepository
     {
-        List<Guild> GetGuilds();
+        List<GuildResponseModel> GetGuilds();
 
-        Guild GetGuildById(ulong id);
+        GuildResponseModel GetGuildById(ulong id);
 
         List<User> GetUsersByGuildId(ulong guildId);
     }

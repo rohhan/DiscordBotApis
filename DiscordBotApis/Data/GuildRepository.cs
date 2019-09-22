@@ -15,20 +15,40 @@ namespace DiscordBotApis.Data
             _guildContext = context;
         }
 
-        public Guild GetGuildById(ulong id)
+        public GuildResponseModel GetGuildById(ulong id)
         {
-            return _guildContext.Guilds
+            var guild = _guildContext.Guilds
                 .FirstOrDefault(g => g.GuildDiscordId == id);
+
+            var guildResponse = Map(guild);
+
+            return guildResponse;
         }
 
-        public List<Guild> GetGuilds()
+        public List<GuildResponseModel> GetGuilds()
         {
-            return _guildContext.Guilds.ToList();
+            var guilds = _guildContext.Guilds.ToList();
+
+            var guildsResponse = guilds.Select(g => Map(g)).ToList();
+
+            return guildsResponse;
         }
 
         public List<User> GetUsersByGuildId(ulong guildId)
         {
             throw new NotImplementedException();
+        }
+
+        private GuildResponseModel Map(Guild guild)
+        {
+            return new GuildResponseModel()
+            {
+                DateAdded = guild.DateAdded,
+                DateCreated = guild.DateCreated,
+                GuildDiscordId = guild.GuildDiscordId.ToString(),
+                GuildName = guild.GuildName,
+                OwnerId = guild.OwnerId.ToString()
+            };
         }
     }
 }
