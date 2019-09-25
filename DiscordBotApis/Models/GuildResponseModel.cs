@@ -5,10 +5,8 @@ using System.Threading.Tasks;
 
 namespace DiscordBotApis.Models
 {
-    public class Guild
+    public class GuildResponseModel
     {
-        public int Id { get; set; }
-
         /// <summary>
         /// The date that the guild was created according to Discord.
         /// </summary>
@@ -19,12 +17,10 @@ namespace DiscordBotApis.Models
         /// </summary>
         public DateTimeOffset DateAdded { get; set; }
 
-        public ulong GuildDiscordId { get; set; }
+        public string GuildDiscordId { get; set; }
 
         public string GuildName { get; set; }
 
-        public ulong OwnerId { get; set; }
-
-        public List<GuildUser> GuildUsers { get; set; }
+        public string OwnerId { get; set; }
     }
 }

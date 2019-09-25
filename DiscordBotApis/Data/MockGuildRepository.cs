@@ -8,18 +8,18 @@ namespace DiscordBotApis.Data
 {
     public class MockGuildRepository : IGuildRepository
     {
-        public List<Guild> GetGuilds()
+        public List<GuildResponseModel> GetGuilds()
         {
-            var guild = new Guild();
+            var guild = new GuildResponseModel();
 
-            var guildList = new List<Guild>() { guild };
+            var guildList = new List<GuildResponseModel>() { guild };
 
             return guildList;
         }
 
-        public Guild GetGuildById(ulong id)
+        public GuildResponseModel GetGuildById(ulong id)
         {
-            var guild = new Guild();
+            var guild = new GuildResponseModel();
 
             return guild;
         }

@@ -24,7 +24,6 @@ namespace DiscordBotApis.Controllers
         [HttpGet]
         public ActionResult<List<Guild>> Get()
         {
-
             var guilds = _guildRepository.GetGuilds();
 
             return Ok(guilds);
