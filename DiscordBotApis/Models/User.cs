@@ -9,12 +9,14 @@ namespace DiscordBotApis.Models
     {
         public int Id { get; set; }
 
-        public long DiscordId { get; set; }
+        public ulong UserDiscordId { get; set; }
 
         public string Username { get; set; }
 
         public ushort DiscriminatorValue { get; set; }
 
-        public List<GuildUser> UserGuilds { get; set; }
+        public List<GuildUser> GuildUsers { get; set; }
+
+        public bool IsBot { get; set; }
     }
 }

@@ -10,6 +10,8 @@ namespace DiscordBotApis.Data
     public class DiscordBotApiDbContext : DbContext
     {
         public DbSet<Guild> Guilds { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<GuildUser> GuildUsers { get; set; }
 
         public DiscordBotApiDbContext(DbContextOptions options)
             : base(options) { }

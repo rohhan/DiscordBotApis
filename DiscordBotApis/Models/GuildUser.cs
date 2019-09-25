@@ -14,5 +14,11 @@ namespace DiscordBotApis.Models
         public User User { get; set; }
 
         public Guild Guild { get; set; }
+
+        public DateTimeOffset? ActionDate { get; set; }
+
+        public GuildUserActionEnum ActionType { get; set; }
+
+        public DateTimeOffset? DateLastActive { get; set; }
     }
 }
