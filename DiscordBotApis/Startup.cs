@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using DiscordBotApis.Data.Users;
+using Pomelo.EntityFrameworkCore;
 
 namespace DiscordBotApis
 {
@@ -44,7 +45,7 @@ namespace DiscordBotApis
             services.AddScoped<IUserRepository, MockUserRepository>();
 
             services.AddDbContextPool<DiscordBotApiDbContext>(
-                options => options.UseSqlServer(Configuration["ConnectionString:DiscordBotData"])
+                options => options.UseMySql(Configuration["ConnectionString:DiscordBotData"])
             );
         }
 
