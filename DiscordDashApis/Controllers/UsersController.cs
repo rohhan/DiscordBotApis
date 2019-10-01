@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DiscordBotApis.Data.Users;
-using DiscordBotApis.Models;
+using DiscordDashApis.Data.Users;
+using DiscordDashApis.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DiscordBotApis.Controllers
+namespace DiscordDashApis.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

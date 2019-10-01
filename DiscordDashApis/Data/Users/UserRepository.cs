@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DiscordBotApis.Models;
+using DiscordDashApis.Models;
 using Microsoft.EntityFrameworkCore.Internal;
 
-namespace DiscordBotApis.Data.Users
+namespace DiscordDashApis.Data.Users
 {
     public class UserRepository : IUserRepository
     {

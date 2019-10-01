@@ -1,10 +1,10 @@
-﻿using DiscordBotApis.Models;
+﻿using DiscordDashApis.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DiscordBotApis.Data.Users
+namespace DiscordDashApis.Data.Users
 {
     public interface IUserRepository
     {

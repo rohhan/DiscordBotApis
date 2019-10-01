@@ -1,11 +1,11 @@
-﻿using DiscordBotApis.Models;
+﻿using DiscordDashApis.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DiscordBotApis.Data
+namespace DiscordDashApis.Data
 {
     public class DiscordBotApiDbContext : DbContext
     {

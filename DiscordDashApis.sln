@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordBotApis", "DiscordBotApis\DiscordBotApis.csproj", "{DA175EC7-ED09-41ED-BD78-F87C4FBD3010}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscordDashApis", "DiscordDashApis\DiscordDashApis.csproj", "{BCF4E107-AF09-41FF-BF30-8628A0ED75F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA175EC7-ED09-41ED-BD78-F87C4FBD3010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA175EC7-ED09-41ED-BD78-F87C4FBD3010}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA175EC7-ED09-41ED-BD78-F87C4FBD3010}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA175EC7-ED09-41ED-BD78-F87C4FBD3010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF4E107-AF09-41FF-BF30-8628A0ED75F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF4E107-AF09-41FF-BF30-8628A0ED75F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF4E107-AF09-41FF-BF30-8628A0ED75F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF4E107-AF09-41FF-BF30-8628A0ED75F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
