@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DiscordBotApis.Models;
+using DiscordDashApis.Models;
 
-namespace DiscordBotApis.Data
+namespace DiscordDashApis.Data
 {
     public class MockGuildRepository : IGuildRepository
     {
