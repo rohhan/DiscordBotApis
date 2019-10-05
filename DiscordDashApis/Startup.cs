@@ -42,10 +42,11 @@ namespace DiscordDashApis
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddScoped<IGuildRepository, GuildRepository>();
-            services.AddScoped<IUserRepository, MockUserRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             services.AddDbContextPool<DiscordBotApiDbContext>(
-                options => options.UseSqlServer(Configuration["ConnectionString:DiscordBotData"])
+                options => options.UseSqlServer(Configuration["ConnectionString:DiscordBotData"], 
+                                    sqlServerOptions => sqlServerOptions.EnableRetryOnFailure())
             );
         }
 
